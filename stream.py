@@ -139,7 +139,7 @@ def create_stream_url(yt_url, title, thumbnail_url):
         trailer_youtube_id=trailer_youtube_id
     )
     # Create or overwrite the output file
-    output_file = open(title+'.html', 'w')
+    output_file = open(f'templates/{title}.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(movie_tiles=content)
