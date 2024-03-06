@@ -13,6 +13,7 @@ def hello():
 @app.route('/yt_stream')
 def yt_stream():
    url = request.args.get('url')
+   print("the requested url: "+url)
    url_data = Data(url)
    title = url_data.title()
    create_stream_url(url, title, default_thumb)
