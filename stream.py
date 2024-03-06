@@ -147,6 +147,3 @@ def create_stream_url(yt_url, title, thumbnail_url):
     # Output the file
     output_file.write(main_page_head + rendered_content)
     output_file.close()
-
-    url = 'file://' + os.path.abspath(output_file.name)
-    return url
